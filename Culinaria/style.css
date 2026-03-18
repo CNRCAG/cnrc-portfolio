@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #fff3e6, #ffe0cc);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+.receitas-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.card-receita {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: aparecer 0.7s ease;
+}
+
+.card-receita:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.card-receita h2 {
+    background-color: #fff7f0;
+    color: #5c2c06;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.6rem;
+}
+
+.card-receita img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 15px auto 0;
+}
+
+.logo-footer {
+    width: 70px;
+    height: auto;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.card-receita section {
+    padding: 18px 20px 0 20px;
+}
+
+.card-receita h3 {
+    color: #8b4513;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    border-left: 5px solid #d2691e;
+    padding-left: 10px;
+}
+
+.card-receita h4 {
+    color: #a0522d;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+.card-receita ul,
+.card-receita ol {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.card-receita li {
+    margin-bottom: 6px;
+}
+
+footer {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-top: 20px;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.info-receita {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.info-receita p {
+    margin-bottom: 6px;
+}
+
+.info-receita p:last-child {
+    margin-bottom: 0;
+}
