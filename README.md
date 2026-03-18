@@ -8,7 +8,6 @@ Estou aprendendo programação e desenvolvendo projetos para praticar minhas hab
 ## Tecnologias
 - HTML
 - CSS
-- JavaScript
 
 ## Projetos
 
